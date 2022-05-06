@@ -1,0 +1,2172 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#"
+     xml:base="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Auto="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#has_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#has_part">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Chasis"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electrical"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Powertrain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#has_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#has_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#is_madeBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#is_madeBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#NoDoors -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#NoDoors">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#NoSeats -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#NoSeats">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#acceleration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#acceleration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>&quot;The acceleration of a car is the time is takes to get from 0-60 miles per hour, measured in seconds&quot;</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#alloy_size -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#alloy_size">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>&quot;The alloy size is is the size of the alloy and the alloy of a car are mixtures of a metal and other elements that fit on the tyre of a car. This is measured in inches.&quot;</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#boot -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#boot">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#capacity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#capacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#capacity">
+        <rdfs:comment>&quot;the capacity is the size of the space which is measured in litres&quot;</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#consumption -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#consumption">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>&quot;The fuel consumption of a car is the number of miles that a car can cover on a gallon of fuel, measured in MPG which stands for miles per gallon.&quot;</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#cylinder -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#cylinder">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>&quot;The number of cylinders of a car is the chamber where fuel is combusted and power is generated.&quot;</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#engine_size -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#engine_size">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>&quot;An engine&apos;s size is otherwise referred to as its &apos;capacity&apos; which is a measurement of how much space the engine&apos;s pistons operate in.&quot;</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#height -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#height">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>&quot;The height of a car is measured in milimeters&quot;</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#horsepower -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#horsepower">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>&quot;Horsepower refers to the power an engine produces. It&apos;s calculated through the power needed to move 550 pounds one foot in one second or by the power needs to move 33,000 pounds one foot in one minute.&quot;</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#length -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#length">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>&quot;The length of a car is measured in milimeters&quot;</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#tank -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#tank">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#capacity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#top_speed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#top_speed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>&quot;The highest speed that the car can reach is measured in miles per hour&quot;</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#torque -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#torque">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>&quot;Torque indicates the force to which the drive shaft is subjected. Torque is expressed in pound-feet (lb-ft)&quot;</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#weight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#weight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>&quot;The weight of a car is measured in kilograms&quot;</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#width -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#width">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>&quot;The width of a car is measured in milimeters&quot;</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Chasis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Chasis"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Company"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Differential -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Differential">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Powertrain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electrical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electrical"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Fuel_Tank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Fuel_Tank">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Powertrain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Powertrain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Powertrain"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Transmission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Transmission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Powertrain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Type"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#A140 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#A140">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#FWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Manual"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Petrol"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hatchback"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mercedes_Benz"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.9</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38.2</consumption>
+        <cylinder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cylinder>
+        <engine_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.4</engine_size>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1575</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3606</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">106</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">96</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1105</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1719</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#A150 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#A150">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#FWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Manual"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Petrol"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hatchback"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mercedes_Benz"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.6</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.6</consumption>
+        <cylinder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cylinder>
+        <engine_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</engine_size>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1593</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3838</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">109</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">103</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1225</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1975</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#A160 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#A160">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#FWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Manual"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Petrol"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hatchback"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mercedes_Benz"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.6</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">341</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">51.4</consumption>
+        <cylinder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cylinder>
+        <engine_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6</engine_size>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1433</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">102</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4299</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">118</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">133</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1370</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2022</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#A160_CDI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#A160_CDI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#A170 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#A170">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#FWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Manual"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Petrol"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hatchback"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mercedes_Benz"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.9</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">380</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">51</consumption>
+        <cylinder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cylinder>
+        <engine_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7</engine_size>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1593</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">116</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3838</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">117</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">114</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1240</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1975</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#A170_CDI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#A170_CDI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Diesel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#FWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Manual"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hatchback"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mercedes_Benz"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.5</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">370</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">58</consumption>
+        <cylinder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cylinder>
+        <engine_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7</engine_size>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1589</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3776</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">108</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">133</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1190</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1719</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#A180 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#A180">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#FWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Manual"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Petrol"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hatchback"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mercedes_Benz"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.2</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">341</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">52.3</consumption>
+        <cylinder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cylinder>
+        <engine_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6</engine_size>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1433</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4292</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">126</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">147.52</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1370</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2022</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#AWD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#AWD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Differential"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Airbag -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Airbag">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electrical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Transmission"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#BMW -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#BMW">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electrical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Chasis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Chasis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Chasis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Camper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Camper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Combi_Van -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Combi_Van">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Convertible -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Convertible">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Coupe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Coupe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Chasis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Diesel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Diesel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Fuel_Tank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electrical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electric -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electric">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Fuel_Tank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Chasis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Estate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Estate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#FWD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#FWD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Differential"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Chasis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Chasis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Chasis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hatchback -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hatchback">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Chasis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electrical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electrical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electrical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#MPV -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#MPV">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Manual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Manual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Transmission"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mercedes_Benz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mercedes_Benz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Minibus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Minibus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Chasis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Model3-LongRange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Model3-LongRange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#AWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hatchback"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tesla"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.6</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">542</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">151</consumption>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1443</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">346</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4694</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">374</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">145</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">713</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1844</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2088</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ModelX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ModelX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electric"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#4WD"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#SUV"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tesla"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">745</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">115</consumption>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1684</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">333</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5036</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">259</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">387</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2108</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2271</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Panel_Van -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Panel_Van">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Chasis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Petrol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Petrol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Fuel_Tank"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pick_Up -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pick_Up">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#RWD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#RWD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Differential"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Chasis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Roadster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Roadster">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#AWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electric"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Convertible"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tesla"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.9</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">121</consumption>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1127</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">288</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3946</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">400</torque>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#SUV -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#SUV">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Saloon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Saloon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Chasis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Powertrain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tesla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tesla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Chasis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electrical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Powertrain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Chasis"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Diesel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#FWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Manual"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hatchback"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">435</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">62.8</consumption>
+        <cylinder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cylinder>
+        <engine_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</engine_size>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1593</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3883</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">102</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">132</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1325</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1764</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electrical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#X1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#X1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Airbag"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#FWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Manual"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Petrol"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#RWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#4WD"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#SUV"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#BMW"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.7</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">505</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45.6</consumption>
+        <cylinder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cylinder>
+        <engine_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</engine_size>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1598</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">217</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4447</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">139</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">385</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1480</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1821</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#X2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#X2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Airbag"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Diesel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#FWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Manual"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Petrol"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#4WD"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#SUV"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#BMW"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.7</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">470</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">47.9</consumption>
+        <cylinder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cylinder>
+        <engine_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</engine_size>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1526</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">136</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4360</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">220</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1470</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#X3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#X3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Airbag"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Diesel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Manual"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Petrol"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#RWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#4WD"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#SUV"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#BMW"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.3</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">550</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">37.2</consumption>
+        <cylinder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</cylinder>
+        <engine_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</engine_size>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1678</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">502</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4657</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">174</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">350</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2065</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2089</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#X4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#X4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Diesel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Manual"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Petrol"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#4WD"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#SUV"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#BMW"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">525</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">31</consumption>
+        <cylinder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</cylinder>
+        <engine_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19</engine_size>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1621</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">355</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4751</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1918</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#X5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#X5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Diesel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Petrol"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#RWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#4WD"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#SUV"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#BMW"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.7</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">650</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">43.1</consumption>
+        <cylinder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</cylinder>
+        <engine_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</engine_size>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1748</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">555</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4938</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">750</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2175</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#X6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#X6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Diesel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Petrol"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#4WD"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#SUV"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#BMW"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.2</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">580</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">33.6</consumption>
+        <cylinder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</cylinder>
+        <engine_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</engine_size>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1696</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">460</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4941</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">83</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">750</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2320</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#X7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#X7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Diesel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Petrol"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#4WD"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#SUV"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#BMW"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.4</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">212</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">27.7</consumption>
+        <cylinder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</cylinder>
+        <engine_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</engine_size>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1805</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">390</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5151</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">83</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">750</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2555</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#100D-ModelS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#100D-ModelS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#AWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electric"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hatchback"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tesla"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">984</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">128</consumption>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1445</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">605</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4978</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">687</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2215</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1963</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#100D-ModelX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#100D-ModelX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electric"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#4WD"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#SUV"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tesla"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.9</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2487</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">115</consumption>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1684</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">417</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5036</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">487</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2533</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2070</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#114d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#114d">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Airbag"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Diesel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Manual"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#RWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hatchback"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#BMW"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.2</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">360</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68.9</consumption>
+        <cylinder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cylinder>
+        <engine_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6</engine_size>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1421</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4324</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">115</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">173.34</torque>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#114i -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#114i">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Manual"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Petrol"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#RWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hatchback"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#BMW"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</NoDoors>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.2</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">360</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">49.6</consumption>
+        <cylinder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cylinder>
+        <engine_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6</engine_size>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1421</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">102</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4324</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">121</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">132.77</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1290</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1984</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#116d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#116d">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Diesel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Manual"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#RWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hatchback"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#BMW"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.1</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">380</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60.1</consumption>
+        <cylinder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cylinder>
+        <engine_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6</engine_size>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1434</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">136</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4319</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">124</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">199</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1385</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1799</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#116i -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#116i">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hatchback"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#BMW"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</NoDoors>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.7</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">360</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48.7</consumption>
+        <cylinder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cylinder>
+        <engine_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.6</engine_size>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1421</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">136</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3424</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">162.27</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1315</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1765</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#118d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#118d">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Diesel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Engine"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Manual"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#RWD"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Convertible"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Coupe"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hatchback"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#BMW"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</NoDoors>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.4</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">380</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68.9</consumption>
+        <cylinder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</cylinder>
+        <engine_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</engine_size>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1421</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">148</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4329</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">132</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">236</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1395</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1765</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#2WD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#2WD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Differential"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#4WD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#4WD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Differential"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#75D-ModelS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#75D-ModelS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#AWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electric"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hatchback"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tesla"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">894</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">131</consumption>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1445</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">469</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4978</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">443</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2090</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1963</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#75D-ModelX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#75D-ModelX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#AWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electric"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#SUV"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tesla"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.2</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">745</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">114</consumption>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1684</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">329</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5036</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">205</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">658</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2330</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2070</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#85-ModelS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#85-ModelS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#AWD"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Electric"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Ventilator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hatchback"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tesla"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.6</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">774</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">89</consumption>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1435</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">367</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4970</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">440</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2175</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1964</width>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#90-ModelX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#90-ModelX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Car"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Automatic"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Battery"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Boot"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Brake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Bumper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Dashboard"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#ECU"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Gear_Lever"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handbrake"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Handle"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Hood"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Horn"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Indicator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Lights"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Mirror"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Pedal"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Radiator"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Steering"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Suspension"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tyre"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wheel"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Window"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Wiper"/>
+        <has_part rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#4WD"/>
+        <has_type rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#SUV"/>
+        <is_madeBy rdf:resource="http://www.semanticweb.org/mheyd/ontologies/2022/4/Auto#Tesla"/>
+        <NoDoors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoDoors>
+        <NoSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</NoSeats>
+        <acceleration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</acceleration>
+        <alloy_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</alloy_size>
+        <boot rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">187</boot>
+        <consumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">92</consumption>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1684</height>
+        <horsepower rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">503</horsepower>
+        <length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5036</length>
+        <tank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</tank>
+        <top_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155</top_speed>
+        <torque rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">660</torque>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2474</weight>
+        <width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2965</width>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
