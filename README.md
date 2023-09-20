@@ -1,2 +1,1 @@
-# FinalProject
-Please see the OWL file for my final project submission
+This project has used Ontology Web Language (OWL) in order to build the ontology to visualise automobiles as a clear graph. This project has benefited from Protege platform designed by Stanford University. Protege is an open-source knowledge acquisition and ontology editor which was written in Java. So, in terms of the hardware equipment used, this final project has been completed by using a laptop and using a software consisting of Protege and OWL. Semantic web software stack has been used including XML, RDF, OWL and SPARQL in order to build the ontology.
